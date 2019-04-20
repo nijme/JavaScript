@@ -1,17 +1,9 @@
-var acc = document.getElementsByClassName("seta_img_accordion");
-var i;
+var seta = document.getElementsByClassName("seta_img_accordion");
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active")
-    this.style.transform = 'rotate(180deg)'
+  seta.addEventListener("click", function() {
+    var divSobreMim = document.getElementsByClassName("sobre-mim");
 
-    var sobreMim = this.nextElementSibling;
-    if (sobreMim.style.display === "block") {
-      sobreMim.style.display = "none";
-      this.style.transform = 'rotate(0deg)'
-    } else {
-      sobreMim.style.display = "block";
+    if (divSobreMim.style.display === "none") {
+      divSobreMim.style.display = "hidden"
     }
   });
-}

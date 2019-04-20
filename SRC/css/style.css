@@ -35,7 +35,7 @@ body {
 .card {
     padding: 15px;
 }
-.about-img{
+.img-thumbnail{
     width: 250px;
     margin: 0 auto;
     margin-bottom: 40px;
@@ -56,4 +56,15 @@ body {
     margin-left: 10px;
 }
 .seta{
-    padding: 25px;
+    padding: 25px; }
+
+    .filter-seta{ 
+        width: 5%;
+    }
+    .sobre-mim {
+        display: none;
+    }
+    
+    .seta_img_accordion {
+        text-align: center;
+    }
